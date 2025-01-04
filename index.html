@@ -6,6 +6,8 @@
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <title>Hackathon</title>
           <link rel="stylesheet" href="styles.css">
+          <script type="module" src="firebaseapp.js" ></script>
+          <script type="module" src="script.js" ></script>
           <script type="module"
                     src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
           <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.js"></script>
@@ -188,30 +190,39 @@
                 <div class="container4">
                     <h1 class="container4-h1">Product packaging</h1>
             
-                    <div class="product-grid">
-                        <div class="product">
-                            <img src="./image/red.png" alt="CDS22 Formula 900 Billion">
-                            <div class="product-title">CDS22-formula</div>
-                            <div class="product-details1">900 billion sachets</div>
-                            <div class="product-details">Superior power</div>
-                            <div class="product-details">Monthly 45 Billion live bacteria per sachet</div>
-                            <button class="product-button" id="shop-now" data-product="900-billion">Shop Now</button>
+                    <div class="slider-container">
+                        <div class="product-grid">
+                            <div class="product">
+                                <img src="./image/red.png" alt="CDS22 Formula 900 Billion">
+                                <div class="product-title">CDS22-formula</div>
+                                <div class="product-details1">900 billion sachets</div>
+                                <div class="product-details">Superior power</div>
+                                <div class="product-details">Monthly 45 Billion live bacteria per sachet</div>
+                                <button class="product-button" data-product="900-billion">Shop Now</button>
+                            </div>
+                    
+                            <div class="product">
+                                <img src="./image/cds_450_v2-1.png" alt="CDS22 Formula 450 Billion">
+                                <div class="product-title">CDS22-formula</div>
+                                <div class="product-details2">450 billion sachets</div>
+                                <div class="product-details">Strong and convenient</div>
+                                <div class="product-details">Daily 15 Billion live bacteria per sachet</div>
+                                <button class="product-button" data-product="450-billion">Shop Now</button>
+                            </div>
+                    
+                            <div class="product">
+                                <img src="./image/cds_112_v2-1.png" alt="CDS22 Formula 112 Billion">
+                                <div class="product-title">CDS22-formula</div>
+                                <div class="product-details3">112 billion capsules</div>
+                                <div class="product-details">Effective and reliable</div>
+                                <div class="product-details">Daily 3.7 Billion live bacteria per capsule</div>
+                                <button class="product-button" data-product="112-billion">Shop Now</button>
+                            </div>
                         </div>
-                        <div class="product">
-                            <img src="./image/cds_450_v2-1.png" alt="CDS22 Formula 450 Billion">
-                            <div class="product-title">CDS22-formula</div>
-                            <div class="product-details2">450 billion sachets</div>
-                            <div class="product-details">Strong and convenient</div>
-                            <div class="product-details">Daily 15 Billion live bacteria per sachet</div>
-                            <button class="product-button" id="shop-now" data-product="450-billion">Shop Now</button>
-                        </div>
-                        <div class="product">
-                            <img src="./image/cds_112_v2-1.png" alt="CDS22 Formula 112 Billion">
-                            <div class="product-title">CDS22-formula</div>
-                            <div class="product-details3">112 billion capsules</div>
-                            <div class="product-details">Effective and reliable</div>
-                            <div class="product-details">Daily 3.7 Billion live bacteria per individually packaged capsule</div>
-                            <button class="product-button" id="shop-now" data-product="112-billion">Shop Now</button>
+                    
+                        <div class="slider-controls">
+                            <button id="prev">&lt;</button>
+                            <button id="next">&gt;</button>
                         </div>
                     </div>
                     <div class="instructions">
@@ -277,7 +288,7 @@
                 <div class="last-container">
                     <h1>CDS22-formula</h1>
                     <div class="form-container">
-                        <div class="form">
+                        <div class="form" id="form" >
                             <label for="name">Name:</label>
                             <input type="text" id="name" name="name">
             
@@ -295,9 +306,9 @@
                                 <label for="consent">I consent to the processing of personal data after reading the Privacy Policy</label>
                             </div>
             
-                            <button class="send-button">Send Message</button>
+                            <button class="send-button" id="submitButton" >Send Message</button>
                         </div>
-                        <div class="product-image">
+                        <div class="product-image1">
                             <img src="./image/cds_450_v2-1.png" alt="CDS22 Formula">
                         </div>
                     </div>
@@ -307,7 +318,7 @@
                 </footer>
 
 
-                <script type="module" src="firebaseapp.js" defer></script>
-                <script type="module" src="script.js" defer></script>
+          
+                
 </body>
 </html>
